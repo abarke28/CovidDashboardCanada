@@ -13,6 +13,7 @@ namespace CovidDashboardCanada.Model
             get { return _date; }
             set { _date = value; }
         }
+        public string CaseType { get; set; }
         public int BC { get; set; }
         public int AB { get; set; }
         public int SK { get; set; }
