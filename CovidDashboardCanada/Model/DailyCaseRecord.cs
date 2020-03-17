@@ -13,6 +13,18 @@ namespace CovidDashboardCanada.Model
             get { return _date; }
             set { _date = value; }
         }
+        private double _latitude;
+        public double Latitude
+        {
+            get { return _latitude; }
+            set { _latitude = value; }
+        }
+        private double _longtitude;
+        public double Longtitude
+        {
+            get { return _longtitude; }
+            set { _longtitude = value; }
+        }
         public string CaseType { get; set; }
         public int BC { get; set; }
         public int AB { get; set; }
