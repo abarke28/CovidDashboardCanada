@@ -25,6 +25,8 @@ namespace CovidDashboardCanada.Model
             get { return _longtitude; }
             set { _longtitude = value; }
         }
+        public int XPosition { get; set; }
+        public int YPosition { get; set; }
         public string CaseType { get; set; }
         public int BC { get; set; }
         public int AB { get; set; }

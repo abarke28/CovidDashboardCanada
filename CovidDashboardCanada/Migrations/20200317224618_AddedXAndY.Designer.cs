@@ -4,14 +4,16 @@ using CovidDashboardCanada.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CovidDashboardCanada.Migrations
 {
     [DbContext(typeof(CovidContext))]
-    partial class CovidContextModelSnapshot : ModelSnapshot
+    [Migration("20200317224618_AddedXAndY")]
+    partial class AddedXAndY
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -83,13 +85,13 @@ namespace CovidDashboardCanada.Migrations
                     b.Property<int>("WS")
                         .HasColumnType("int");
 
-                    b.Property<int>("XPosition")
-                        .HasColumnType("int");
-
                     b.Property<int>("YK")
                         .HasColumnType("int");
 
-                    b.Property<int>("YPosition")
+                    b.Property<int>("xPosition")
+                        .HasColumnType("int");
+
+                    b.Property<int>("yPosition")
                         .HasColumnType("int");
 
                     b.HasKey("ID");
